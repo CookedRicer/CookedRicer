@@ -7,6 +7,7 @@
 //CLI
 npm init react-ts-template
 yarn init
+touch .prettierrc
 ```
 #### Install TailwindCSS
 ```js
@@ -40,3 +41,4 @@ module.exports = {
 ```js
 yarn add -D daisyui@latest
 ```
+
