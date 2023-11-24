@@ -3,18 +3,18 @@
 ---
 - Setup
 #### React Project
-```
+```js
 //CLI
 npm init react-ts-template
 yarn init
 ```
 #### Install TailwindCSS
-```javascript
+```js
 //CLI
 yarn add -D tailwindcss
 npx tailwindcss init
 ```
-```javascript
+```js
 //tailwind.config.js
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -37,4 +37,6 @@ module.exports = {
 
 #### Install Daisyui 
 ##### (Tailwind base plugin) [OPTIONAL]
+```javascript
 yarn add -D daisyui@latest
+```
