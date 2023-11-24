@@ -37,6 +37,6 @@ module.exports = {
 
 #### Install Daisyui 
 ##### (Tailwind base plugin) [OPTIONAL]
-```javascript
+```js
 yarn add -D daisyui@latest
 ```
