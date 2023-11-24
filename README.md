@@ -1,42 +1,38 @@
-# MarkDown syntax
-###### Quote
-`> Quote`
-> Quote
+# Notes
+## React
+---
+- Setup
+#### React Project
+```
+//CLI
+npm init react-ts-template
+yarn init
+```
+#### Tailwind
+```
+//CLI
+yarn add -D tailwindcss
+npx tailwindcss init
 
-###### Point
-```
-- Point
-+ Point
-```
-- Point
-+ Point
+//tailwind.config.js
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  //if using 'daisyui' lib
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark"],
+  },
+};
 
-###### Style
-```
-*italic*
-**bold**
-***italic&bold***
-```
-*italic*
-**bold**
-***italic&bold***
+//daisyui (Tailwind base plugin)
+yarn add -D daisyui@latest
 
-###### Code 
-`code` ```code <p>```
-###### Link
-`[link](google.com)`
-[link](google.com)
-
-###### Option Box
+//App.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+//
 ```
-- [ ] option1
-- [x] option2
-```
-- [ ] option1
-- [x] option2
-
-###### Image
-```
-![alt]('imglink.jpg' 'title')
-```
-![alt](https://lh3.googleusercontent.com/1GkePzki6ZaVDoZOECVzvrrOu9jDOwinjdGafhaAjj9pfO9yFzqPqeuYOqIQ41JlwOlyNhAOrPSGGbioBeVd_eiH0cn_1X6uRWf-uA 'title')
